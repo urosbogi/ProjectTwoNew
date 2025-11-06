@@ -8,8 +8,25 @@ class Program
         Console.WriteLine("Please input your paragraph.");
         string paragraph = Console.ReadLine();
         string[] words = paragraph.Split();
-        int wordCount = 0;
-        Console.WriteLine($"The word count is {wordCount = words.Length} ");
+
+        /* for (int i=0; i<words.Length; i++)
+        {
+            Console.WriteLine(words[i]); 
+        }*/
+
+        //avoid empty spaces
+
+        for (int i = 0; i < words.Length; i++)
+        {
+            if (words[i].Length > 0)
+            { 
+                int wordCount = 0;
+                Console.WriteLine($"The word count is {wordCount = words.Length} ");
+
+            }
+        }
+
+        //count char number
 
         int letterNumber = 0;
         foreach (string word in words)
