@@ -27,11 +27,20 @@ class Program
         Console.WriteLine($"The word count is {wordCount} ");
         //count char number
 
+      
+
         int letterNumber = 0;
         foreach (string word in words)
         {
-            int templetterNumber = word.Length;
-            letterNumber = templetterNumber + letterNumber;
+            foreach (char letter in word)
+            {
+                if (char.IsLetter(letter))
+                {
+                    letterNumber++;
+                    //  int tempLetterNumber = word.Length;
+                    //  letterNumber = tempLetterNumber + letterNumber;
+                }
+            }
         }
         Console.WriteLine($"test number: {letterNumber}");
 
