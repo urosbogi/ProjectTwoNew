@@ -42,7 +42,7 @@ class Program
                 }
             }
         }
-        Console.WriteLine($"test number: {letterNumber}");
+        Console.WriteLine($"the number of letters: {letterNumber}");
 
         // Console.WriteLine("testing to see the results: {1}", paragraph, paragraph.Length);
         
