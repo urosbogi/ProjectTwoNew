@@ -25,9 +25,8 @@ class Program
             }
         }
         Console.WriteLine($"The word count is {wordCount} ");
+
         //count char number
-
-
 
         int letterNumber = 0;
         foreach (string word in words)
@@ -43,6 +42,8 @@ class Program
             }
         }
         Console.WriteLine($"the number of letters: {letterNumber}");
+
+        //calculate average letters per text
 
         double averageChars = (double)letterNumber / (double)wordCount;
         Console.WriteLine($"the average number of chars is: {averageChars}");
